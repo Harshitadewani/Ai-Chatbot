@@ -1,0 +1,91 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+   background: linear-gradient(to right, #d4f3f8, #e8fdfd); 
+}
+
+.chat-container {
+  height: 90vh;
+  width: 70vw;
+  max-width: 900px;           /* 👈 max width fix karo */
+  margin: 30px auto;          /* 👈 center me laya aur upar-niche spacing bhi di */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fcff;
+  border-radius: 12px;        /* Optional: Thoda rounded look */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Optional: Soft shadow */
+}
+
+
+.chat-header {
+  background-color: #d5f3ff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bot-icon {
+  width: 60px; /* pehle 40px tha */
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.user {
+  background-color: #ccf1f6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot {
+  background-color: #efefef;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #4cd3c2;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
